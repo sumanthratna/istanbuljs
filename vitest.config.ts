@@ -11,7 +11,10 @@ export default defineConfig({
       reporter: [
         "text",
         fileURLToPath(
-          new URL("./packages/istanbul-lib-report/dist/reports/github-actions/index.mjs", import.meta.url),
+          new URL(
+            "./packages/istanbul-lib-report/dist/reports/github-actions/index.mjs",
+            import.meta.url,
+          ),
         ),
       ],
     },
